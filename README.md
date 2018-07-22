@@ -4,17 +4,17 @@ This is our internal boilerplate for Laravel projects, it should hopefully reduc
 
 The table below illustrates the planned features and the currently implemented features.
 
-| Feature        | Implemented  | Desc | Link |
-| ------------- |:-------------:|:----|:------:|
-| Log Viewer    | ✅            | Easily viewing logs| https://github.com/rap2hpoutre/laravel-log-viewer|
-| React         | ✅            | Frontend framework |https://github.com/facebook/react |
-| ESLint        | ✅            | Coding standards |https://github.com/airbnb/javascript |
-| Ziggy         | ✅            | Use named routes in your js|https://github.com/tightenco/ziggy |
-| JWT Auth      | ✅            | JWT API authorization |https://github.com/tymondesigns/jwt-auth |
-| Jest          | ❌            | JS testing framework |https://github.com/facebook/jest |
-| Enzyme        | ❌            | Utilities for testing React |https://github.com/airbnb/enzyme |
-| Travis        | ❌            | Continious integration |https://travis-ci.com/ |
-| Dusk          | ❌            | Browser testing for Laravel (blade) |https://laravel.com/docs/5.6/dusk |
+| Feature                                                         | Implemented | Desc                                |
+| ----------------------------------------------------------------|:-----------:|:------------------------------------|
+| [Log Viewer](https://github.com/rap2hpoutre/laravel-log-viewer) | ✅          | Easily viewing logs                 |
+| [React](https://github.com/facebook/react)                      | ✅          | Frontend framework                  |
+| [ESLint](https://github.com/airbnb/javascript)                  | ✅          | Coding standards                    |
+| [Ziggy](https://github.com/tightenco/ziggy)                     | ✅          | Use named routes in your js         |
+| [JWT Auth](https://github.com/tymondesigns/jwt-auth)            | ✅          | JWT API authorization               |
+| [Jest](https://github.com/facebook/jest)                        | ❌          | JS testing framework                |
+| [Enzyme](https://github.com/airbnb/enzyme)                      | ❌          | Utilities for testing React         |
+| [Travis](https://travis-ci.com/)                                | ❌          | Continious integration              |
+| [Dusk](https://laravel.com/docs/5.6/dusk)                       | ❌          | Browser testing for Laravel (blade) |
 
 ### Notes
 
