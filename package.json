@@ -8,16 +8,21 @@
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
     "lint": "eslint ./resources/assets/js/**/* --ext js --ext jsx",
+    "test": "cross-env NODE_ENV=test jest",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
+    "babel-jest": "^23.4.0",
     "babel-preset-react": "^6.24.1",
     "cross-env": "^5.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.10.0",
+    "jest": "^23.4.1",
     "laravel-mix": "^2.0"
   },
   "dependencies": {
@@ -28,5 +33,9 @@
     "react-dom": "^16.4.1",
     "axios": "^0.18",
     "bootstrap": "^4.0.0"
+  },
+  "jest": {
+    "roots": ["<rootDir>/resources/assets/js/"],
+    "setupTestFrameworkScriptFile": "<rootDir>/resources/assets/js/test-setup.js"
   }
 }
