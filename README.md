@@ -14,7 +14,7 @@ The table below illustrates the planned features and the currently implemented f
 | [Jest](https://github.com/facebook/jest)                        | ✅          | JS testing framework                |
 | [Enzyme](https://github.com/airbnb/enzyme)                      | ✅          | Utilities for testing React         |
 | [Travis](https://travis-ci.com/)                                | ❌          | Continious integration              |
-| [Dusk](https://laravel.com/docs/5.6/dusk)                       | ❌          | Browser testing for Laravel (blade) |
+| [Dusk](https://laravel.com/docs/5.6/dusk)                       | ✅          | Browser testing for Laravel (blade) |
 
 ### Notes
 
