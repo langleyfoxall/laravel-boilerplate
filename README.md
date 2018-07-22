@@ -11,8 +11,8 @@ The table below illustrates the planned features and the currently implemented f
 | [ESLint](https://github.com/airbnb/javascript)                  | ✅          | Coding standards                    |
 | [Ziggy](https://github.com/tightenco/ziggy)                     | ✅          | Use named routes in your js         |
 | [JWT Auth](https://github.com/tymondesigns/jwt-auth)            | ✅          | JWT API authorization               |
-| [Jest](https://github.com/facebook/jest)                        | ❌          | JS testing framework                |
-| [Enzyme](https://github.com/airbnb/enzyme)                      | ❌          | Utilities for testing React         |
+| [Jest](https://github.com/facebook/jest)                        | ✅          | JS testing framework                |
+| [Enzyme](https://github.com/airbnb/enzyme)                      | ✅          | Utilities for testing React         |
 | [Travis](https://travis-ci.com/)                                | ❌          | Continious integration              |
 | [Dusk](https://laravel.com/docs/5.6/dusk)                       | ❌          | Browser testing for Laravel (blade) |
 
