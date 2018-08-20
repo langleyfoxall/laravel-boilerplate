@@ -34,10 +34,14 @@ abstract class DuskTestCase extends BaseTestCase
             '--headless'
         ]);
 
-        return RemoteWebDriver::create(
+        $driver = return RemoteWebDriver::create(
             'http://localhost:9515', DesiredCapabilities::chrome()->setCapability(
                 ChromeOptions::CAPABILITY, $options
             )
         );
+      
+        $driver->manage()->window()->setSize(new WebDriverDimension(1920, 1080));
+
+        return $driver;
     }
 }
