@@ -13,6 +13,20 @@ abstract class DuskTestCase extends BaseTestCase
     use CreatesApplication, DatabaseMigrations;
 
     /**
+     * Setup test case
+     *
+     * @return void
+     */
+    protected function setUp()
+    {
+        parent::setUp();
+
+        foreach (static::$browsers as $browser) {
+            $browser->driver->manage()->deleteAllCookies();
+        }
+    }
+  
+    /**
      * Prepare for Dusk test execution.
      *
      * @beforeClass
