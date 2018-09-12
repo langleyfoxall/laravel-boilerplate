@@ -150,6 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
+        DivineOmega\LaravelRouteRestrictor\Providers\LaravelRouteRestrictorServiceProvider::class,
 
         /*
          * Application Service Providers...
