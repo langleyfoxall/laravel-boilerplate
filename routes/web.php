@@ -16,11 +16,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/**
- * Probably best to put this route behind some form of admin middleware
- * Bare minimum some basic auth.
- */
-Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+Route::group(['middleware' => 'routeRestrictor:'.env('LOGS_USERNAME').','.env('LOGS_PASSWORD')], function () {
+    Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+});
 
 Auth::routes();
 
