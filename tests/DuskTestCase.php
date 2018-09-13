@@ -47,7 +47,8 @@ abstract class DuskTestCase extends BaseTestCase
     {
         $options = (new ChromeOptions)->addArguments([
             '--disable-gpu',
-            '--headless'
+            '--headless',
+            '--lang=en-GB'
         ]);
 
         $driver = RemoteWebDriver::create(
