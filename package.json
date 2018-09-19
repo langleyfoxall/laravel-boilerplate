@@ -35,7 +35,9 @@
     "bootstrap": "^4.0.0"
   },
   "jest": {
-    "roots": ["<rootDir>/resources/assets/js/"],
+    "roots": [
+      "<rootDir>/resources/assets/js/"
+    ],
     "setupTestFrameworkScriptFile": "<rootDir>/resources/assets/js/test-setup.js"
   }
 }
