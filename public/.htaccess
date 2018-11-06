@@ -5,6 +5,8 @@
 
     RewriteEngine On
 
+    RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
