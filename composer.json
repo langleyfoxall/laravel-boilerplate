@@ -12,6 +12,7 @@
         "divineomega/laravel-route-restrictor": "^2.1",
         "aws/aws-sdk-php": "^3.67",
         "fideloper/proxy": "^4.0",
+        "langleyfoxall/laravel-nist-password-rules": "^1.1",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "rap2hpoutre/laravel-log-viewer": "^0.19.1",
