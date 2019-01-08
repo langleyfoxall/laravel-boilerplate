@@ -17,6 +17,7 @@ addons:
     packages:
     - mysql-server
     - mysql-client
+  chrome: stable
 
 cache:
   directories:
