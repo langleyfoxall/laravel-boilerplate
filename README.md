@@ -2,6 +2,18 @@
 
 This is our internal boilerplate for Laravel projects, it should hopefully reduce the time it takes for you to setup a project & also improve code standards across the board.
 
+## Installation
+
+The Langley Foxall Laravel Boilerplate can be easily installed using Composer. Just run the following command from within your new project directory.
+
+```bash
+composer create-project langleyfoxall/laravel-boilerplate
+```
+
+The boilerplate and all its dependencies will be automatically downloaded.
+
+## Features
+
 The table below illustrates the planned features and the currently implemented features.
 
 | Feature                                                           | Implemented | Desc                                |
