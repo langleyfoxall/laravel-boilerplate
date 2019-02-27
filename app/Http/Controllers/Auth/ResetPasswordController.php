@@ -48,7 +48,7 @@ class ResetPasswordController extends Controller
         return [
             'token'    => 'required',
             'email'    => 'required|email',
-            'password' => PasswordRules::changePassword($this->email),
+            'password' => PasswordRules::changePassword(request()->email),
         ];
     }
 }
