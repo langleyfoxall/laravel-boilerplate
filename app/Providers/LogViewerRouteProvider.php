@@ -17,7 +17,7 @@ class LogViewerRouteProvider extends ServiceProvider
     {
         ['username' => $username, 'password' => $password] = config('laravel-route-restrictor.logs');
 
-        if ($username === null || $password === null) {
+        if (empty($username) || empty($password)) {
             return;
         }
 
