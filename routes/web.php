@@ -11,17 +11,9 @@
 |
 */
 
-
 Route::get('/', function () {
     return view('welcome');
 });
-
-['username' => $logsUsername, 'password' => $logsPassword] = config('laravel-route-restrictor.logs');
-if ($logsUsername && $logsPassword) {
-    Route::group(['middleware' => "routeRestrictor:$logsUsername,$logsPassword"], function () {
-        Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
-    });
-}
 
 Auth::routes();
 
