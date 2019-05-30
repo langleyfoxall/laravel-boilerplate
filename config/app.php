@@ -234,6 +234,8 @@ return [
             'MAIL_PASSWORD',
             'LOGS_USERNAME',
             'LOGS_PASSWORD',
+            'AWS_ACCESS_KEY_ID',
+            'AWS_SECRET_ACCESS_KEY',
         ],
 
         '_SERVER' => [
@@ -247,6 +249,8 @@ return [
             'MAIL_PASSWORD',
             'LOGS_USERNAME',
             'LOGS_PASSWORD',
+            'AWS_ACCESS_KEY_ID',
+            'AWS_SECRET_ACCESS_KEY',
         ],
 
         '_POST' => [
