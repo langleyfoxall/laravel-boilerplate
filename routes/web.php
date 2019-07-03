@@ -11,13 +11,8 @@
 |
 */
 
-
 Route::get('/', function () {
     return view('welcome');
-});
-
-Route::group(['middleware' => 'routeRestrictor:'.env('LOGS_USERNAME').','.env('LOGS_PASSWORD')], function () {
-    Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 });
 
 Auth::routes();
