@@ -30,13 +30,13 @@ before_script:
 - pear config-set preferred_state beta
 - pecl channel-update pecl.php.net
 - yes | pecl install imagick
+# Install Composer dependencies
+- composer install --no-interaction
 # Setup headless web browser for Laravel Dusk tests
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
 - php artisan dusk:chrome-driver 74
 - ./vendor/laravel/dusk/bin/chromedriver-linux &
-# Install Composer dependencies
-- composer install --no-interaction
 # Create database, migrate & seed
 - mysql -e 'CREATE DATABASE IF NOT EXISTS test_database;'
 - php artisan migrate:refresh --seed
