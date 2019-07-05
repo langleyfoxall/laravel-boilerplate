@@ -3,17 +3,15 @@ language: php
 sudo: required
 
 php:
-- 7.2
+- "7.2"
 
-dist: trusty
+dist: xenial
 
 services:
 - mysql
 
 addons:
   apt:
-    sources:
-    - mysql-5.7-trusty
     packages:
     - mysql-server
     - mysql-client
@@ -30,12 +28,11 @@ before_script:
 - pear config-set preferred_state beta
 - pecl channel-update pecl.php.net
 - yes | pecl install imagick
-# Setup headless web browser for Laravel Dusk tests
-- export DISPLAY=:99.0
-- sh -e /etc/init.d/xvfb start
-- ./vendor/laravel/dusk/bin/chromedriver-linux &
 # Install Composer dependencies
 - composer install --no-interaction
+# Setup headless web browser for Laravel Dusk tests
+- export DISPLAY=:99.0
+- ./vendor/laravel/dusk/bin/chromedriver-linux &
 # Create database, migrate & seed
 - mysql -e 'CREATE DATABASE IF NOT EXISTS test_database;'
 - php artisan migrate:refresh --seed
