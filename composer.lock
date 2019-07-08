@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32ed9bb452955e1ff8ae43df972eb099",
+    "content-hash": "86ea2d84b660201d710fb34d1fc56bf2",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1020,30 +1020,36 @@
         },
         {
             "name": "langleyfoxall/laravel-nist-password-rules",
-            "version": "v2.0.0",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/langleyfoxall/laravel-nist-password-rules.git",
-                "reference": "b23223e7750fa1d4d6150f2f90665d4a5a1a03ec"
+                "reference": "8a0f2f5a37b31d0a3cbfea88f8583f0ea47e1ae9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/langleyfoxall/laravel-nist-password-rules/zipball/b23223e7750fa1d4d6150f2f90665d4a5a1a03ec",
-                "reference": "b23223e7750fa1d4d6150f2f90665d4a5a1a03ec",
+                "url": "https://api.github.com/repos/langleyfoxall/laravel-nist-password-rules/zipball/8a0f2f5a37b31d0a3cbfea88f8583f0ea47e1ae9",
+                "reference": "8a0f2f5a37b31d0a3cbfea88f8583f0ea47e1ae9",
                 "shasum": ""
             },
             "require": {
                 "divineomega/laravel-password-exposed-validation-rule": "^2.0.1",
-                "illuminate/contracts": "^5.1",
-                "illuminate/support": "^5.1",
+                "laravel/framework": "^5.4",
                 "php": ">=7.1"
             },
             "require-dev": {
                 "fzaninotto/faker": "^1.6",
-                "php-coveralls/php-coveralls": "^2.0",
-                "phpunit/phpunit": "^5.7"
+                "orchestra/testbench": "^3.4",
+                "php-coveralls/php-coveralls": "^2.0"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LangleyFoxall\\LaravelNISTPasswordRules\\ServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "LangleyFoxall\\LaravelNISTPasswordRules\\": "src/"
@@ -1059,8 +1065,8 @@
                     "email": "jordan@langleyfoxall.co.uk"
                 }
             ],
-            "description": "? Provides Laravel validation rules that follow the password related recommendations found in NIST Special Publication 800-63B.",
-            "time": "2019-02-22T13:25:51+00:00"
+            "description": "🔒 Provides Laravel validation rules that follow the password related recommendations found in NIST Special Publication 800-63B.",
+            "time": "2019-07-03T09:24:19+00:00"
         },
         {
             "name": "laravel/framework",

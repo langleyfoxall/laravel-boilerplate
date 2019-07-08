@@ -31,6 +31,7 @@ before_script:
 # Install Composer dependencies
 - composer install --no-interaction
 # Setup headless web browser for Laravel Dusk tests
+- php artisan dusk:chrome-driver 74
 - export DISPLAY=:99.0
 - ./vendor/laravel/dusk/bin/chromedriver-linux &
 # Create database, migrate & seed
