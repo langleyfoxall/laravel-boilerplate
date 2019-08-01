@@ -24,6 +24,10 @@ cache:
   - $HOME/.composer/cache
 
 before_script:
+# Install Node.js and build JS/CSS.
+- nvm install stable
+- npm install
+- npm run prod
 # Install Imagick
 - pear config-set preferred_state beta
 - pecl channel-update pecl.php.net
