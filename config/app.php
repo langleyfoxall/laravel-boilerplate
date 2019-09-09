@@ -255,6 +255,7 @@ return [
 
         '_POST' => [
             'password',
+            'password_confirmation',
         ],
     ],
 
